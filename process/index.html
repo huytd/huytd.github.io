@@ -40,7 +40,7 @@ signals for various resons.</p><ul class="css-0"><li class="css-0"><p class="css
 this is the polite way to ask a program to terminate. <code class="css-0">kill</code> command
 use this signal.</p></li><li class="css-0"><p class="css-19iowwu"><strong class="css-0">SIGINT</strong>: &quot;program interrupt&quot; signal is sent when the user types
 the <code class="css-0">INTR</code> character (<em class="css-0">Ctrl + C</em>).</p></li><li class="css-0"><p class="css-19iowwu"><strong class="css-0">SIGQUIT</strong>: Similar to SIGINT, except it&#x27;s the <code class="css-0">QUIT</code> character
-(_Ctrl + <!-- -->_<!-- -->), this will produces a core dump when it terminate the
+(<em class="css-0">Ctrl + <!-- -->\</em>), this will produces a core dump when it terminate the
 process, like an error signal.</p><p class="css-19iowwu">If a program creates temporary files or something, it should not be
 deleted when handling this signal, so the user can examine them
 afterwards.</p></li><li class="css-0"><p class="css-19iowwu"><strong class="css-0">SIGKILL</strong>: This cause immediate termination, it cannot be handled
