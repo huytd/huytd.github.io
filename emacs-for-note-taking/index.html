@@ -50,12 +50,12 @@ clipboard, and it inserts a link to that image to the document, but you
 cannot change the file name of the pasted image right in the
 editor. In Emacs, we can fix this.</p><p class="css-19iowwu">First, we need to have a way to save an image from clipboard to disk,
 I used a small bash script for this:</p><p class="css-19iowwu">Create a script file at <strong class="css-0">/usr/local/bin/pasteimage</strong> with the
-following content:</p><pre class="css-189ciyd"><code class="css-1bahbbz">#!/usr/bin/env bash
+following content (Please note that this script only works on MacOS):</p><pre class="css-189ciyd"><code class="css-1bahbbz">#!/usr/bin/env bash
 folder=$(pwd)
 filename=$(date +%Y-%m-%d\ at\ %H.%M.%S).png
 
 if [ $# -ne 0 ]; then
-    if [ -d $1 ](/-d-1); then
+    if [ -d $1 ]; then
         if [ &quot;$1&quot; != &quot;.&quot; ]; then folder=$1; fi
     else
         a=$(dirname &quot;$1&quot;)    
